@@ -103,6 +103,19 @@ public class ProductController {
         return productDao.chercherUnProduitCher(400);
     }
 
+    @GetMapping(value = "/AdminProduits")
+    public String calculerMargeProduit(){
+        List<Product> produits = productDao.findAll();
+        String response = "";
+        for (Product produit : produits ){
+            int price = produit.getPrix();
+            int buyingPrice = produit.getPrixAchat();
+            response += productDao.findById(produit.getId())
+                    + ": " + (price-buyingPrice);
+            response += "\n";
+        }
+        return response;
+    }
 
 
 }
