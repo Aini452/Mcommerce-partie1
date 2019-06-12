@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "1aca2175-ec24-446b-997a-0833c45b71e0",
+		"name": "TestAPI- Openclassroom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/AdminProduits",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 4,\n\t\"nom\": \"Poney en bois\",\n\t\"prix\": 0,\n\t\"prixAchat\": 200\n}"
+				},
+				"url": "http://localhost:9090/TriAlphabetique",
+				"description": "Partie 1 - Affichage de la marge"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/TriAlphabetique",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 4,\n\t\"nom\": \"Poney en bois\",\n\t\"prix\": 0,\n\t\"prixAchat\": 200\n}"
+				},
+				"url": "http://localhost:9090/TriAlphabetique",
+				"description": "Partie 2 - Tri par ordre alphabétique"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/Produits",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 4,\n\t\"nom\": \"Poney en bois\",\n\t\"prix\": 0,\n\t\"prixAchat\": 200\n}"
+				},
+				"url": "http://localhost:9090/Produits",
+				"description": "Partie 3 - Validation du prix de vente\nAffichage du message"
+			},
+			"response": []
+		}
+	]
+}
